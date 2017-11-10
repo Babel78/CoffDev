@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragmentContainer, HomeFragment.newInstance());
         transaction.commit();
-        EstimoteSDK.initialize(getApplicationContext(),"beacon1-bix","257d621c9f372a11b7a6b8c630e10a31");
+        EstimoteSDK.initialize(getApplicationContext(),"YOUR_NAME_PROJECT","YOUR_KEY_PROJECT");
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
